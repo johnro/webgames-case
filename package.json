@@ -1,0 +1,19 @@
+{
+  "name": "webgames-case",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Attensi",
+  "license": "MIT",
+  "dependencies": {
+    "flowbite": "^2.3.0"
+  },
+  "scripts": {
+		"install:all": "yarn install && yarn --cwd svelte-game-engine install",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	}
+}

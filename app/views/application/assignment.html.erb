@@ -1,0 +1,137 @@
+<style>
+  body {
+    background-color: #f8fafc;
+  }
+</style>
+
+<article class="prose">
+  <section>
+    <h2>Assignment</h2>
+    <p>Improve and work on the code you have been given such that your application looks and behaves similarly to the one shown and described below.</p>
+    <p>We have already done a lot of the work. Do not let the images and videos intimidate you. Use the components and functions we have defined for you.</p>
+    <p>We have added <code>TODO:</code>s where we think you should make changes.</p>
+  </section>
+  
+  <section id="backend">
+    <a href="#backend" class="no-underline">
+      <h3># Backend (Ruby on Rails)</h3>
+    </a>
+    <div class="p-1 bg-slate-200 rounded-lg shadow-lg">
+      <img src="/images/target_backend_preview.png">
+    </div>
+    <p>Notice that:</p>
+    <ul>
+      <li>The number of questions in the quiz is shown below the description</li>
+      <li>Listing all scores on a quiz together with the player names</li>
+    </ul>
+    <p>Additionally:</p>
+    <ul>
+      <li>
+        Create a method <code>create</code> that creates new scores in the <code>ScoresController</code> such that we can use it in our frontend.
+        Route it such that we can make <code>POST</code> requests to <code>/quizzes/&lt;quiz-id&gt;/scores</code>.
+      </li>
+      <li>
+        Add validation to the <code>Score</code> model such that the <code>player</code> name is at least 1 character long and <code>points</code> is a whole integer number.
+      </li>
+    </ul>
+  </section>
+
+  <section id="frontend">
+    <a href="#frontend" class="no-underline">
+      <h3>Frontend (Svelte)</h3>
+    </a>
+    <div class="p-1 bg-slate-200 rounded-lg shadow-lg">
+      <video controls>
+        <source src="/videos/target_frontend_preview.mov">
+      </video>
+    </div>
+    <p>Notice that:</p>
+    <ul>
+      <li>The quiz is fetched from the backend.</li>
+      <li>We remember what the user has answered and calculate the score by multiplying the number of correctly answered questions with one hundred.</li>
+      <li>The player must write their name to be allowed to submit their score.</li>
+      <li>We show the current question number in the top left corner.</li>
+    </ul>
+  </section>
+
+  <section id="assets">
+    <a href="#assets" class="no-underline">
+      <h3>Assets</h3>
+    </a>
+    <p>All icons needed to complete this assignment are included.</p>
+    <ul>
+      <li>Cross icon</li>
+      <li>Checkmark icon</li>
+      <li>Hash icon</li>
+      <li>Rocket icon</li>
+    </ul>
+  </section>
+
+  <section id="delivery">
+    <a href="#delivery" class="no-underline">
+      <h2>Delivery</h2>
+    </a>
+    <p>Create a private GitHub repository and give John and Wahed access. Alternatively compress your code into an archive and send it back to us.</p>
+    <p>Our Github usernames:</p>
+    <ul>
+      <li><code>johnro</code></li>
+      <li><code>wahed-attensi</code></li>
+    </ul>
+  </section>
+
+  <section id="good-luck">
+    <a href="#good-luck" class="no-underline">
+      <h2>Good luck!</h2>
+    </a>
+    <p>
+      Try to implement as much as you can. Sprinkle on some animations if you have time.
+      <b>Have fun.</b>
+      It is not the end of the world if something does not work exactly like our previews.
+    </p>
+    <div class="flex justify-center">
+      <div class="w-32 h-32 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 500 500">
+          <g id="background_achievement-15">
+            <path fill="#ffd62c" d="M244.1 462.3 18.2 328.8c-7.2-4-13.4-10.7-6.4-15l226.7-130.7c3.4-2.1 8.6-3.5 12-1.5l237.2 137.6c7.2 4.2 8.5 15.9 1.3 20L273.9 462.1c-9.2 5.4-20.5 5.4-29.8.2z"/>
+            <linearGradient id="SVGID_1_-achievement-15" x1="171.3625" x2="203.5925" y1="89.725" y2="138.065" gradientTransform="matrix(1 0 0 -1 0 502)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#ffd62c"/>
+              <stop offset="1" stop-color="#9a433a"/>
+            </linearGradient>
+            <path fill="url(#SVGID_1_)" d="M149.3 362.3c-5.3-3.5-10.1-7.8-15.5-11.2l-42 21.3L228.2 453l39.6-26.3c-2.2-1.3-116.3-63-118.5-64.4z"/>
+          </g>
+          <g id="book_achievement-15">
+            <path d="M354.7 376.2c.4 0 4.4-1.6 1.1-4.1-2.2-1.7-4.5-3.3-6.9-4.7" class="st2_achievement-15"/>
+            <path fill="#ffe8bc" d="M354.7 355.2s-3.3 12.3 0 18.9l-45.3 26.6-44.8 25.9v-19.2"/>
+            <path d="M356.2 353.2c-.1.9-.2 1.7-.3 2.6l-91.3 51.7v19.2l91.2-53.2v2.3L261 430.7v-26.1l95.2-51.4z" class="st2_achievement-15"/>
+            <path d="m355.7 353.6-94.2 53.9-132.1-77.6 92.1-52.9c2.8-1.6 6.3-1.6 9.1.1l125 74.1c.7.4.9 1.2.5 1.9 0 .2-.2.4-.4.5z" class="st4_achievement-15"/>
+            <path d="M261.1 430.6s-132-77.8-131.6-78.1 0-22.5 0-22.5l132.1 77.6-.5 23zM355.8 351.2c.8.6 1.3 1.4 1.4 2.4.2 1.6-1.5 2.4-2.1 2.7" class="st2_achievement-15"/>
+            <linearGradient id="SVGID_00000019660554438947926090000007019875864816022192_-achievement-15" x1="208.4211" x2="243.6011" y1="136.0193" y2="188.7793" gradientTransform="matrix(1 0 0 -1 0 502)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f26250"/>
+              <stop offset="1" stop-color="#463f46"/>
+            </linearGradient>
+            <path fill="url(#SVGID_00000019660554438947926090000007019875864816022192_)" d="m203.7 321-45.1 26.1 67.1 39.3 51.1-29.4"/>
+          </g>
+          <g id="trophy_achievement-15">
+            <path fill="#68e1fd" d="m133.6 206.4-8.6-8.7c-2-2-5.2-2-7.2 0s-2 5.2 0 7.2l8.7 8.6c2 2 5.2 2 7.2 0s1.9-5.1-.1-7.1zM113 223.4H99.1c-6.5 0-6.6 10.2 0 10.2H113c6.5 0 6.5-10.2 0-10.2zM134.2 245.6c-2-1.9-5.2-1.9-7.2 0l-9.2 9.2c-2 2-2 5.2 0 7.2s5.2 2 7.2 0l9.2-9.2c1.9-2 1.9-5.2 0-7.2zM343.2 253.9l8.7 8.7c2 2 5.2 2 7.2 0s2-5.2 0-7.2l-8.6-8.6c-2-2-5.2-2-7.2 0s-2.1 5.1-.1 7.1zM363.8 236.9h13.9c6.5 0 6.5-10.2 0-10.2h-13.9c-6.5 0-6.5 10.2 0 10.2zM342.6 214.6c2 1.9 5.2 1.9 7.2 0l9.2-9.2c1.9-2.1 1.8-5.3-.2-7.2-2-1.8-5-1.8-6.9 0l-9.2 9.2c-2.1 2.1-2.1 5.2-.1 7.2zM202.1 327.8v15.3s8.9 22.3 42.3 22.3 44.9-21.5 44.9-21.5v-14" class="st6_achievement-15 targetColor"/>
+            <ellipse cx="245.8" cy="327.8" fill="#68e1fd" class="st6_achievement-15 targetColor" rx="43.6" ry="25.4"/>
+            <ellipse cx="245.8" cy="327.8" fill="#463f46" opacity=".31" rx="43.6" ry="25.4"/>
+            <path fill="#68e1fd" d="M230.4 295.8v17.7s4.1 7.5 16.1 7.5c11.9 0 14.8-8.6 14.8-8.6v-20.2M298.9 234.4l22.1 13.1s4.6 46.8-39.5 37.3l6.8-10.3s20.5 1.6 20.3-20.5l-11.9-6.2 2.2-13.4zM193.6 174.3l-21.8-12c-2.6.8-4.3 3.3-4.2 6 .2 4.8-1.6 34.4 24.9 61.6V211s-10.6-14.4-11.9-29.5l10.8 6.5" class="st6_achievement-15 targetColor"/>
+            <path fill="#68e1fd" d="m189.4 186.6 4.9 69.7s6.9 41.5 51.5 41.5 51-41.1 51-41.1l6.6-70" class="st6_achievement-15 targetColor"/>
+            <path fill="#463f46" d="M267.9 215.5s17.3-2.2 25.5-13.7c0 0-1.9 77-14.9 85.5s-15.6 11.4-40.8 10.3c0 .1 32-2.4 30.2-82.1z" opacity=".13"/>
+            <ellipse cx="246.4" cy="186.6" fill="#68e1fd" class="st6_achievement-15 targetColor" rx="57" ry="32.8"/>
+            <ellipse cx="246.4" cy="186.6" fill="#0d77a0" rx="57" ry="32.8"/>
+            <ellipse cx="245.8" cy="186.5" fill="#023d4f" rx="45.8" ry="22.4"/>
+          </g>
+          <g id="character_achievement-15">
+            <path d="m292.3 157.5 3.4-5.4s1-4.9 2.2-4.4.6 5.2.6 5.2 6.9-6.8 8.8-4.8 3 7.1 1.9 8.4-13.9 6.9-13.9 6.9M211.3 128.3l1.2-5.1s2.3-3.4 1.4-3.9-3.4 2.7-3.4 2.7 0-8.1-2.3-8.1-6 2.3-6.1 3.8 4 12.4 4 12.4" class="st11_achievement-15"/>
+            <path d="M219.1 148.9c-.8-3.1-4.9-16.7-6.2-23-4.7-.7-7-.7-10 2.6 1.1 8.1 3.2 22.1 4.6 26.8 2.1 6.9 24.5 23.7 24.5 23.7l5.7-21.2s-17.6-4.9-18.6-8.9zM291.6 155.3s-15.7 18-20.2 18.3-14.4-9.5-14.4-9.5l-15.1-5.8c.1 6.8.2 13.5.1 20.3l12.7 5.4s6.7 8.9 16.7 9.7 28.3-29.2 28.3-29.2c-.3-3.4-8.1-9.2-8.1-9.2z" class="st4_achievement-15"/>
+            <path d="M253.6 205.1s10.6-30.8 6.3-37.9-21.5-12.6-29.7-11.9-3 49.4-1.6 49.8 13.4 8.8 25 0z" class="st4_achievement-15"/>
+            <path fill="#af2b38" d="M226.8 200.5v7.3s13.9 3.9 27.8 1.1l-.8-6.4c.1 0-10.9 5.6-27-2z"/>
+            <path d="M231.1 143s0 18 6.6 19.2c7.3 1.3 11.3-7 11.3-7s.9-15.9-6.3-17.3-11.4 2.8-11.6 5.1z" class="st11_achievement-15"/>
+            <path d="M231.9 145.2c-2.2-.6-4.9-1.3-6.3-3.4-2-3.2.2-6.5 2.9-8.4 3.2-2.2 7.2-3 11-2.1 5.2.9 12.5 3.1 13.9 8.9 2 8.1-5.8 18.2-5.8 18.2v-5s2.6-3.3 1.2-4.6-1.9 1.8-1.9 1.8.6-6-3.7-6.6c-1.8-.3-2.4.7-3.8 1.5-1 .5-2.1.7-3.2.6-1.4-.1-2.9-.4-4.3-.9z" class="st2_achievement-15"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+</article>
